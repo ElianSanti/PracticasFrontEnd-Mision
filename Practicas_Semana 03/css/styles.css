@@ -1,0 +1,211 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --color_principal: #3364FF;
+    --color_secundario: #2C4493;
+    --color_terciario: #898E9E;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*GLOBALEs*/
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    color: var(--color_secundario);
+}
+p{
+    font-family: var(--fuenteParrafos);
+    color: var(--color_terciario);
+}
+.letrasgrandes{
+    font-size: 1.5rem;
+}
+.fondo_icono{
+    background-color: #E8EDFE;
+    border-radius: .5rem;
+}
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.boton{
+    background-color: var(--color_principal);
+    color: white;
+    margin-top: .5rem;
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border:none;
+    -webkit-box-shadow: 1px 14px 22px -5px rgba(88,99,214,1);
+    -moz-box-shadow: 1px 14px 22px -5px rgba(88,99,214,1);
+    box-shadow: 1px 14px 22px -5px rgba(88,99,214,1);
+}
+/*Header*/
+header{
+    background: rgb(176,203,247);
+    background: linear-gradient(269deg, rgba(176,203,247,1) 41%, rgba(251,251,251,1) 50%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.logo{
+    color: var(--color_principal);
+    font-family: var(--fuenteHeading);
+}
+.header_barra{
+    display: flex;
+    justify-content: space-around;
+}
+.barra_posicion{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.barra_enlaces{
+    display: flex;
+    gap: 2rem;
+}
+.barra_enlaces a{
+    color: var(--color_terciario);
+    font-size: 1.4rem;
+    font-family: var(--fuenteParrafos);
+    font-weight: 700;
+}
+/*Primera sección de la página*/
+.seccion1_1{
+    display: flex;
+    justify-content: center;
+}
+.seccion1_posicion1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seccion1_posicion1 h2{
+    color: var(--color_secundario);
+    font-family: var(--fuenteHeading);
+    font-size: 4rem;
+    max-width: 60%;
+    margin: 0;
+}
+.seccion1_posicion1 p{
+    font-family: var(--fuenteParrafos);
+    text-align: justify;
+    max-width: 60%;
+    line-height: 2;
+}
+.seccion1_div{
+    display: flex;
+    
+    color: var(--color_secundario);
+    font-size: .8rem;
+}
+
+.seccion1_2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 700px;
+    right: 500px;
+    border-radius: .5rem;
+}
+.seccion1_nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0rem 2rem;
+}
+.seccion1_3{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0rem 4rem;
+    gap: 2rem;
+}
+.imagenes_vacunas{
+    display: flex;
+    justify-content: center;
+}
+/*Seccion2*/
+.seccion2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+}
+
+/*Seccion 3*/
+.seccion3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    max-width: 60%;
+    
+}
+.seccion3_1{
+    -webkit-box-shadow: 0px 17px 15px 6px rgba(202,200,235,1);
+    -moz-box-shadow: 0px 17px 15px 6px rgba(202,200,235,1);
+    box-shadow: 0px 17px 15px 6px rgba(202,200,235,1);
+    padding: 2rem;
+    border-radius: .5rem;
+    border-color: #e1e1e1;
+}
+/*Seccion 4*/
+.seccion4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    margin-top: 2rem;
+}
+
+/*Seccion 5*/
+.seccion5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.seccion5_1{
+    display: flex;
+    flex-direction: column;
+}
+.seccion5_2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+/*Seccion 6*/
+.seccion6{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.seccion6_secciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+/*Footer*/
+.footer{
+    background-color: #D9E1FA;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+}
+.footer_barra{
+    display: flex;
+    gap: 5rem;
+}
+.footer_contenido{
+    
+}
