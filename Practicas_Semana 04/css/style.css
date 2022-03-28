@@ -1,0 +1,132 @@
+:root{
+    --fuenteprincipal: 'Inconsolata', monospace;
+}
+.body{
+    background-image: url('/img/fondoPáginapokedex.png');
+    background-repeat: no-repeat;
+    background-size: fixed;
+}
+h1{
+    color: black;
+    text-transform: uppercase;
+    font-family: var(--fuenteprincipal);
+    text-align: center;
+}
+h3{
+    font-family: var(--fuenteprincipal);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+}
+p{
+    font-family: var(--fuenteprincipal);
+    font-size: 10px;
+    font-weight: bold;
+}
+.boton{
+    background-color: black;
+    color: white;
+    margin-top: .5rem;
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border:none;
+}
+.pokedexIzquierda{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    border-radius: 60px 20px 5px 90px;
+    border: 1px solid black
+}
+#pokeImg{
+    width: 300px;
+    height: 300px;
+}
+/*Elementos izquierda*/
+.elementosIzquierda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.elementos_posicion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Tubo*/
+.tubo{
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    margin-right: -251px;
+    background-color: black;
+    width: 50px;
+    height: 500px;
+
+    
+}
+/*Elementos derecha*/
+.pokedexDerecha{
+    background-color: red;
+    position: absolute;
+    top: 33%;
+    right: 34%;
+    margin-right: -243px;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px 180px 20px 0px;
+    border-color: black black black transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.contenedor{
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+@media (min-width:1140px){
+    .pokedexDerecha{
+        top: 33%;
+        right: 31%;
+    }
+}
+@media (min-width:1669px){
+    .pokedexDerecha{
+        top: 33%;
+        right: 34%;
+    }
+}
+.estadisticas_cuadroblanco{
+    background-color: white;
+    height: 140px;
+    width: 230px;
+}
+
+.movimientos_cuadro{
+    background-color: white;
+    width: 230px;
+    height: 100px;
+}
+.acomodo{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.alturaypeso{
+    text-align: center;
+    background-color: white;
+    width: 100px;
+}

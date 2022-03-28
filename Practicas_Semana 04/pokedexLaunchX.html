@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pokedex LaunchX</title>
+</head>
+<body class="body">
+    <div class="pokedexIzquierda">
+        <h1>Pokedex LaunchX</h1>
+        <div class="elementosIzquierda">
+            <img src="img/esperando.png" alt="Pokemon" id="pokeImg"><br>
+            <div class="elementos_posicion">
+                <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName"><br>
+                <button class="boton" onclick="fetchPokemon()">Cambiar pokemon</button><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="tubo"></div>
+
+    <div class="pokedexDerecha">
+        <div class="contenedor">
+            <div class="estadisticas_cuadroblanco">
+                <p>Tipo: <span id="tipo"></span></p>
+                <div class="acomodo">
+                    <p>Vida: <span id="hp"></span></p>
+                    <p>Ataque: <span id="attack"></span></p>
+                    <p>Defensa: <span id="defense"></span></p>
+                    <p>Ataque especial: <span id="special_attack"></span></p>
+                    <p>Defensa especial: <span id="special_defense"></span></p>
+                    <p>Velocidad: <span id="speed"></span></p>
+                </div>
+                
+            </div>
+            <div class="movimientos_cuadro">
+                <h3>Movimientos</h3>
+                <div class="acomodo">
+                    <p id="move"></p>
+                    <p id="move1"></p>
+                    <p id="move2"></p>
+                    <p id="move3"></p>
+                    <p id="move4"></p>
+                    <p id="move5"></p>
+                </div>
+            </div>
+            <div class="alturaypeso">
+                <p>Altura: <span id="altura"></span></p>
+                <p>Peso: <span id="peso"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="./pokedexLaunchX.js"></script>
+</body>
+</html>
